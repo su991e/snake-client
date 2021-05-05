@@ -14,22 +14,21 @@ const connect = function() {
     console.log('You are now connected to game server!');
   });
   conn.write('Name: YSB');
-
-  conn.on('connect', () => {
-    console.log('You are connected');
-    setInterval(() => {
-      conn.write('Move: up');
-    }, 100);
-    setInterval(() => {
-      conn.write('Move: left');
-    }, 200);
-    setInterval(() => {
-      conn.write('Move: down');
-    }, 3000);
-    setInterval(() => {
-      conn.write('Move: right');
-    }, 1000);
-  });
+  //conn.on('connect', () => {
+  //  console.log('You are connected');
+  //  setInterval(() => {
+  //    conn.write('Move: up');
+  //  }, 100);
+  //  setInterval(() => {
+  //    conn.write('Move: left');
+  //  }, 200);
+  //  setInterval(() => {
+  //    conn.write('Move: down');
+  //  }, 3000);
+  //  setInterval(() => {
+  //    conn.write('Move: right');
+  //  }, 1000);
+  //});
     
   
   
